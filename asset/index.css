@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: red;
+}
+/* GENERIC CLASSES */
+
+.flex__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* END OF GENERICS CLASSES */
+
+/* START OF HEADER SECTION  */
+header {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.header__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.8rem;
+}
+.logo__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.logo__text {
+  margin-left: 0.8rem;
+  font-size: 1.5rem;
+}
+.airtime__text {
+  color: #de3d6d;
+}
+
+.cash__text {
+  color: #f5844c;
+}
+
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #012a4a;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+.header__links:hover {
+  color: #de3d6d;
+}
+
+.header__links:active {
+  /* color: #de3d6d; */
+}
+
+.login {
+  color: white;
+  background: linear-gradient(101.31deg, #de3d6d 42.62%, #f5844c 104.19%);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 20px;
+  transition: 0.4s all ease;
+  outline: none;
+}
+
+/* END OF HEADER SECTION  */
+
+/* START OF HERO SECTION */
+
+.hero__section {
+  background-color: rgba(245, 132, 76, 0.05);
+}
+
+.content {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cover {
+  position: relative;
+  max-width: 60%;
+}
+
+.hero__maintext {
+  background: linear-gradient(89deg, #de3d6d 18.77%, #f5844c 91.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero__othertext {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #03435f;
+}
+
+.getstarted__herobutton {
+  color: white;
+  background: linear-gradient(101.31deg, #de3d6d 42.62%, #f5844c 104.19%);
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 30px;
+  transition: 0.4 ease-out;
+  cursor: pointer;
+}
+
+.hero__image {
+  position: relative;
+  left: 3rem;
+  max-width: 50%;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* END OF HERO SECTION */
+
+/* START OF SERVICES SECTION */
+
+.services__section {
+  margin-top: 2rem;
+  color: #03435f;
+}
+
+.service__text {
+  height: 100%;
+  display: flex;
+  gap: 0rem 1rem;
+}
+
+.left__line {
+  width: 0.6rem;
+  height: auto;
+  background-color: #de3d6d;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.services__stepstext {
+  margin-top: 0.8rem;
+}
+
+/* .services__content { 
+ display: grid;
+  grid-template-columns: repeat(3 , 1fr); 
+ align-items: center; 
+ padding-left: 5px;
+  padding-right: 5px; 
+ gap: .5rem; 
+ margin-top: 4.2rem; 
+} */
+
+.services__box {
+  margin-top: 2rem;
+}
+
+.services__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 1rem;
+}
+
+.box {
+  /* margin-right: 7rem; */
+  padding: 1.2rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  flex-basis: 33.33%;
+  /* flex-shrink: 0; */
+}
+
+.services__color1 {
+  background-color: rgba(226, 0, 16, 0.05);
+}
+
+.services__color2 {
+  background-color: rgba(245, 132, 76, 0.05);
+}
+
+.services__color3 {
+  background-color: rgba(85, 166, 48, 0.05);
+}
+
+.services__image {
+  width: 30px;
+  height: 30px;
+}
+
+.services__image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* END OF SERVICES SECTION */
+
+/* START OF PLATFORM SECTION */
+
+.platform__section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 24px;
+  background: url(<path-to-image>), lightgray 90% / contain no-repeat;
+  align-items: center;
+  margin-top: 5%;
+  color: #03435f;
+  padding-left: 80px;
+}
+
+.platform__h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.platform__minitext {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #012a4a;
+}
+
+.platform__image {
+  height: 25rem;
+  width: 25rem;
+}
+
+.platform__image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* PLATFORM SECTION */
+
+/* START OF CUSTOMERS SECTION*/
+
+.customers__section {
+  margin-top: 3rem;
+  color: #03435f;
+}
+
+.customers__header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 24;
+}
+
+.customers__h1 {
+  color: #03435f;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.customers__minitext {
+  width: 350px;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-left: 6.5rem;
+  color: #03435f;
+}
+
+.customers__cover {
+  margin-top: 2.5rem;
+}
+
+.customers__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 1rem;
+}
+
+.customers__box {
+  padding: 1.2rem;
+  transition: all 0.5s ease;
+  background: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  flex-basis: 33.33%;
+}
+
+.customers__cover .customers__content .customers__box h3 {
+  margin-bottom: 1rem;
+}
+
+/* END OF CUSTOMERS SECTION */
+
+/* START OF FOOTER-SECTION  */
+
+.footer__section{
+margin-top: 2rem;
+}
+
+.footer__wrap {
+  background-color: rgba(33, 51, 79, 1);
+  margin-top: 5px;
+  
+}
+
+.footer__logos {
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ padding-top: 1rem;
+}
+
+footer nav {
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.footer__wrap h2 {
+  color: white;
+}
+
+footer nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px 25px;
+}
+
+footer li a {
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* END OF FOOTER-SECTION */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #012a4a;
+  }
+}
+
+/* @media(min-width:450px) and (max-width:774px) {
+  
+
+
+} */
